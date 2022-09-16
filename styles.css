@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+  }
+
+.wrapper {
+    margin: 5% auto 0;
+    max-width: 720px;
+}
+.header {
+    display: flex;
+    position: relative;
+    margin-bottom: 16px;
+}
+.header > h2 {
+    padding: 8px 16px;
+    color:#c23564;
+    cursor: pointer;
+}
+.line {
+    position: absolute;
+    width: 0;
+    height: 6px;
+    background-color:#c23564;
+    bottom: 0;
+    border-radius: 15px;
+    transition: all 0.2s ease;
+}
+.tabs {
+    opacity: 0.5;
+}
+.tabs.active {
+    opacity: 1;
+}
+.list-content{
+    display: none;
+}
+
+
+.list-content.active {
+    display: block;
+}
